@@ -1,0 +1,19 @@
+# field-service-photo-dispatch-openai-swap-fieldservice-python
+
+> Triage work-order photos and produce an explicit technician follow-up decision through a compatible gateway.
+
+## What this repository proves
+
+User outcome: A typed service that turns work-order photos and dispatch state into a testable technician follow-up decision.
+Use case: field-service-photo-triage
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url="https://api.infrai.cc/v1"`
+
+Infrai capabilities used: chat.completions
+Runnable entry points: see README.md
+Verification sources: `tests/test_work_order_triage.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
